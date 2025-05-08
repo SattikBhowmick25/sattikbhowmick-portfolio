@@ -3,7 +3,7 @@
 Welcome to the GitHub repository for my **Personal Portfolio Website** built using **React + Vite**!  
 Visit it live at: [sattikbhowmick-portfolio.netlify.app](https://sattikbhowmick-portfolio.netlify.app)
 
-![Portfolio Screenshot](./assets/screenshot.png)
+![Portfolio Screenshot](./assets/homepage.png)
 
 ## 📌 About Me
 
