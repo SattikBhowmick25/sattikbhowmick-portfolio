@@ -1,8 +1,29 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the GitHub repository for my **Personal Portfolio Website** built using **React + Vite**!  
+Visit it live at: [sattikbhowmick-portfolio.netlify.app](https://sattikbhowmick-portfolio.netlify.app)
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./assets/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 About Me
+
+Hi, I’m **Sattik Bhowmick**, an MCA (Master of Computer Application) student at **Jadavpur University**.  
+I specialize in **Full Stack Development**, with proficiency in the **MERN stack** and other modern web technologies.
+
+## 🚀 Features
+
+- ✨ Clean, responsive, and modern UI
+- 💼 Sectioned navigation (About, Skills, Achievements, Projects, Education)
+- 📃 Resume download option
+- 🔗 Integrated GitHub & LinkedIn icons
+- 🎨 Stylish dark mode theme
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, Tailwind CSS
+- **Animation**: Framer Motion (optional)
+- **Icons**: React Icons, Lucide
+- **Deployment**: Netlify
+
+
+
