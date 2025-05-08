@@ -61,7 +61,7 @@ const About = () => {
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end mt-0">
           <Tilt
-            className="w-24 h-24 sm:w-48 sm:h-48 md:w-[20rem] md:h-[20rem] border-4 border-purple-700 rounded-full"
+            className="w-32 h-32 sm:w-48 sm:h-48 md:w-[20rem] md:h-[20rem] border-4 border-purple-700 rounded-full"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}

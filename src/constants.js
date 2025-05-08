@@ -20,8 +20,6 @@ import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 
 
-// Experience Section Logo's
-
 
 // Education Section Logo's
 import juLogo from './assets/education_logo/ju.jpg';
@@ -30,6 +28,9 @@ import jhsLogo from './assets/education_logo/jhs.png';
 
 // Project Section Logo's
 
+
+// Achievements section
+import jecaLogo from './assets/achievements_logo/wbjeebLogo.jpg';
 
 
 export const SkillsInfo = [
@@ -80,7 +81,7 @@ export const education = [
       school: "Jadavpur University, Kolkata",
       date: "2024 - 2026",
       grade: "-",
-      desc: "I am pursuing Master's degree (MCA) in Computer Applications from Jadavpur University. I have been gaining a strong foundation in programming, software development, and core computer science subjects. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems etc. My experience at Jadavpur University has been instrumental in shaping my technical abilities and professional growth.",
+      desc: "I am pursuing Master of Computer Aplication (MCA) from Jadavpur University. I have studied courses such as Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems etc which has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Master of Computer Applications - MCA",
     },
     {
@@ -111,3 +112,16 @@ export const education = [
       degree: "WBBSE(X) - 10th Grade",
     },
 ];
+
+
+export const achievements = [
+  {
+    id: 0,
+    title: "WBJECA'24 GMR-23",
+    description:
+      "WBJECA is state-level entrance examination for MCA in West Bengal.",
+    image: jecaLogo,
+    result:""
+  }
+  
+];  
