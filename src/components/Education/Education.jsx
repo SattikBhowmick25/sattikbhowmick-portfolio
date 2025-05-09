@@ -46,12 +46,11 @@ const Education = () => {
             perspective={1000}
             scale={1.02}
             transitionSpeed={1000}
-            gyroscope={true}
             >
             <div
               className={`ml-0 mr-0 w-full sm:max-w-96 p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                 index % 2 === 0 ? "sm:ml-18" : "sm:mr-18"
-              } sm:ml-16 sm:mr-16 transform transition-transform duration-300 hover:scale-105`}
+              } sm:ml-16 sm:mr-16 transform transition-transform duration-300 hover:scale-105 hover:border-purple-500`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">

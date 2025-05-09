@@ -37,7 +37,7 @@ const Achievements = () => {
           perspective={1000}
           scale={1.02}
           transitionSpeed={1000}
-          gyroscope={true}
+          gyroscope={false}
           >
           <div
             key={achievement.id}
