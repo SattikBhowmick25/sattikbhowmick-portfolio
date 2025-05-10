@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
+import Tilt from "react-parallax-tilt"; // Import the Tilt component for animation
 
-const Work = () => {
+const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleOpenModal = (project) => {
@@ -28,12 +29,12 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 hover:border-purple-500 transition-transform duration-300"
           >
             <div className="p-4">
               <img
@@ -66,8 +67,17 @@ const Work = () => {
 
       {/* Modal Container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4 ">
+          <Tilt
+          key={selectedProject.id}
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          perspective={1000}
+          scale={1.02}
+          transitionSpeed={1000}
+          gyroscope={false}
+          >
+          <div className="scale-75 bg-gray-900 rounded-xl shadow-2xl sm:w-full lg:w-full w-[90%] max-w-lg overflow-hidden relative border border-2 border-purple-500 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
@@ -78,15 +88,15 @@ const Work = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+              <div className="flex justify-center bg-gray-900 px-4">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="border border-2 border-purple-500 lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
                 />
               </div>
               <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+                <h3 className="lg:text-2xl font-bold text-white mb-4 text-sm">
                   {selectedProject.title}
                 </h3>
                 <p className="text-gray-400 mb-6 lg:text-base text-xs">
@@ -123,10 +133,11 @@ const Work = () => {
               </div>
             </div>
           </div>
+          </Tilt>
         </div>
       )}
     </section>
   );
 };
 
-export default Work;
+export default Projects;

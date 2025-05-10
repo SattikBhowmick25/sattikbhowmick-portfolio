@@ -1,11 +1,9 @@
 // Skills Section Logo's
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
-import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
@@ -27,7 +25,11 @@ import jccLogo from './assets/education_logo/jcc.jpeg';
 import jhsLogo from './assets/education_logo/jhs.png';
 
 // Project Section Logo's
-
+import mraLogo1 from './assets/project_logo/mra1.png';
+import mraLogo2 from './assets/project_logo/mra2.png';
+import chatifyLogo1 from './assets/project_logo/chatify1.png';
+import chatifyLogo2 from './assets/project_logo/chatify2.png';
+import resumeBuilderLogo from './assets/project_logo/resumebuilder.png';
 
 // Achievements section
 import jecaLogo from './assets/achievements_logo/wbjeebLogo.jpg';
@@ -87,11 +89,11 @@ export const education = [
     {
       id: 1,
       img: jccLogo,
-      school: "BSA College, Mathura",
+      school: "Jogesh chandra chaudhuri College, Kolkata",
       date: "2021 - 2024",
       grade: "9.107 CGPA",
       desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from Jogesh Chandra Chaudhuri College, Kolkata. Throughout the B.Sc. course, I was immersed in a variety of subjects from exploring Data Structures and Algorithms to diving into Web Development, Machine learning.",
-      degree: "Bachelor of Science - B.Sc Honours in Computer Science",
+      degree: "B.Sc Honours in Computer Science",
     },
     {
       id: 2,
@@ -124,4 +126,38 @@ export const achievements = [
     result:""
   }
   
+];  
+
+
+ export const projects = [
+    {
+      id: 0,
+      title: "Movie review Analyzer",
+      description:
+        "A powerful movie review analyzer that utilizes NLTK for sentiment analysis and MongoDB for data storage. Built with Flask, this application allows users to analyze movie reviews and gain insights into audience sentiments.",
+      image: mraLogo2,
+      tags: ["NLTK","Python","Flask","MongoDB","HTML", "CSS"],
+      github: "https://github.com/SattikBhowmick25/Movie-Review-Analyzer",
+      webapp: "https://drive.google.com/file/d/1z3pZwk1seVztYvb9cIL9jriQv6-XOQhX/view?usp=drive_link",
+    },
+    {
+      id: 1,
+      title: "Resume Builder",
+      description:
+        "A user-friendly resume builder that allows users to create and download professional resumes. Built with HTML, CSS, and JavaScript, it features a clean design and easy-to-use interface. Offers several resume templates and customization options.",
+      image: resumeBuilderLogo,
+      tags: ["HTML", "CSS", "JavaScript","Cropper.js"],
+      github: "https://github.com/SattikBhowmick25/resume-builder",
+      webapp: "https://sattikbhowmick25.github.io/resume-builder/",
+    },
+    {
+      id: 2,
+      title: "Chatify Chatbot",
+      description:
+        "A chatbot application that utilizes the OpenAI API to provide users with a conversational AI experience. Built with HTML, CSS, and JavaScript, it features a user-friendly interface and real-time chat capabilities.",
+      image: chatifyLogo1,
+      tags: ["API", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/SattikBhowmick25/Chatify-Chatbot",
+      webapp: "https://sattikbhowmick25.github.io/Chatify-Chatbot/",
+    }
 ];  
