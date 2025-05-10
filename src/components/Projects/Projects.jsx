@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <section
       id="work"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative bg-skills-gradient clip-path-custom"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -29,25 +29,25 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-10 sm:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 hover:border-purple-500 transition-transform duration-300"
+            className=" border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 hover:border-purple-500 hover:scale-105 transition-transform duration-300"
           >
             <div className="p-4">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-xl"
+                className="w-full h-32 object-cover rounded-xl"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
+            <div className="p-6 pt-2">
+              <h3 className="text-xl font-bold text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
+              <p className="text-gray-500 text-sm mb-4 pt-4 line-clamp-3">
                 {project.description}
               </p>
               <div className="mb-4">
@@ -77,7 +77,7 @@ const Projects = () => {
           transitionSpeed={1000}
           gyroscope={false}
           >
-          <div className="scale-75 bg-gray-900 rounded-xl shadow-2xl sm:w-full lg:w-full w-[90%] max-w-lg overflow-hidden relative border border-2 border-purple-500 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
+          <div className="mx-auto sm:scale-75 bg-gray-900 rounded-xl shadow-2xl sm:w-full lg:w-full w-[90%] max-w-lg overflow-hidden relative border border-2 border-purple-500 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}

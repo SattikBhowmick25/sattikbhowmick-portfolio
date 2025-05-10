@@ -16,7 +16,7 @@ const Achievements = () => {
   return (
     <section
       id="achievements"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative bg-skills-gradient clip-path-custom"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -64,9 +64,18 @@ const Achievements = () => {
       </div>
 
       {/* Modal Container */}
-      {/*selectedAchievement && (
+      {selectedAchievement && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+          <Tilt
+          key={selectedAchievement.id}
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          perspective={1000}
+          scale={1.02}
+          transitionSpeed={1000}
+          gyroscope={false}
+          >
+          <div className="mx-auto sm:scale-75 bg-gray-900 rounded-xl shadow-2xl sm:w-full lg:w-full w-[90%] max-w-lg overflow-hidden relative border border-2 border-purple-500 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
@@ -77,15 +86,15 @@ const Achievements = () => {
             </div>
             
             <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+              <div className="sm:mb-0 w-full flex justify-center bg-gray-900 px-4">
                 <img
                   src={selectedAchievement.image}
                   alt={selectedAchievement.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  className="sm:scale-75 lg:w-full sm:h-[50%] object-contain rounded-xl shadow-2xl mb-0"
                 />
               </div>
-              <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+              <div className="sm:p-8 sm:pt-0 p-6">
+                <h3 className="lg:text-2xl font-bold text-white mb-2 text-md">
                   {selectedAchievement.title}
                 </h3>
                 <p className="text-gray-400 mb-6 lg:text-base text-xs">
@@ -104,8 +113,9 @@ const Achievements = () => {
               </div>
             </div>
           </div>
+          </Tilt>
         </div>
-      )*/}
+      )}
     </section>
   );
 };

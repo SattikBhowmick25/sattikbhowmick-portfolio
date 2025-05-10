@@ -123,7 +123,7 @@ export const achievements = [
     description:
       "WBJECA is state-level entrance examination for MCA in West Bengal.",
     image: jecaLogo,
-    result:""
+    result:"https://drive.google.com/file/d/1748qvQk8NKPiesBrwRLyVTVmA0sxRGqq/view?usp=drive_link"
   }
   
 ];  
